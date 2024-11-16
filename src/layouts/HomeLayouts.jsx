@@ -22,7 +22,7 @@ const HomeLayouts = () => {
         <aside className="col-span-3">
           <LeftNavbar></LeftNavbar>
         </aside>
-        <main className="col-span-6">
+        <main className="col-span-6 mb-6">
           <Outlet></Outlet>
         </main>
         <aside className="col-span-3">

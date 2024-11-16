@@ -10,6 +10,7 @@ const Navbar = () => {
   const {logOutUser,user}=useContext(AuthContext)
   
   
+  
   const links = (
     <>
       <li>
@@ -68,7 +69,7 @@ const Navbar = () => {
       <div className="navbar-end">
         <div className="flex items-center gap-1">
           {
-            user && user?.photoURL ?<img className="h-8 w-8 rounded-full object-cover border" src={user?.photoURL} alt="user"  />:<img className="h-8 w-8 rounded-full" src={userIcon} alt="user"  />
+            user && user?.photoURL ?<img className="h-8 w-8 rounded-full object-cover border" src={user?.photoURL} alt="user"/>:<img className="h-8 w-8 rounded-full" src={userIcon} alt="user"  />
           }
             
 

@@ -7,7 +7,7 @@ const googleProvider = new GoogleAuthProvider()
 const githubProvider = new GithubAuthProvider()
 
 const SocialLogin = () => {
-  const {signInWithGoogle}= useContext(AuthContext)
+  const {signInWithGoogle,signInWithGithub}= useContext(AuthContext)
   
   return (
     <div className="*:w-full space-y-2 mt-6">
@@ -15,7 +15,7 @@ const SocialLogin = () => {
         <AiOutlineGoogle className="text-xl"/>
         Login With Google
       </button>
-      <button className="btn btn-outline">
+      <button onClick={()=>{signInWithGithub(githubProvider)}} className="btn btn-outline">
         <AiOutlineGithub className="text-xl"/>
         Login with Github
       </button>
